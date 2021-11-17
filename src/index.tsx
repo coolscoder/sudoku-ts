@@ -9,7 +9,6 @@ import {
 	Content,
 	Grid,
 	NewGameButton,
-	Name,
 	Numbers,
 	Title,
 } from './components';
@@ -30,16 +29,6 @@ ReactDOM.render(
 						<Grid />
 						<Numbers />
 					</Card>
-					<Name>
-						Alex -{' '}
-						<a
-							href='http://www.github.com/team-cake'
-							target='_blank'
-							rel='noreferrer'
-						>
-							GitHub
-						</a>
-					</Name>
 				</Content>
 			</PersistGate>
 		</Provider>
