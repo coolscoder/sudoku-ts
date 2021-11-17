@@ -2,6 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
 	display: flex;
-	flex-flow: row;
-	width: 100%;
+	align-items: center;
+	justify-content: space-between;
 `;

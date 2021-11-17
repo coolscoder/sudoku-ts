@@ -12,6 +12,7 @@ export const Button = styled.button`
 		flex: 1;
 		font-size: 16px;
 		font-weight: bold;
+		max-width: 150px;
 		height: 40px;
 		justify-content: center;
 		margin: 4px 2px;

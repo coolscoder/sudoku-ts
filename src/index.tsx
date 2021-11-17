@@ -8,7 +8,7 @@ import {
 	Card,
 	Content,
 	Grid,
-	NewGameButton,
+	Controller,
 	Numbers,
 	Header,
 } from './components';
@@ -25,7 +25,7 @@ ReactDOM.render(
 				<Content>
 					<Header />
 					<Card>
-						<NewGameButton />
+						<Controller />
 						<Grid />
 						<Numbers />
 					</Card>

@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { Container, Logo } from './styles'
-import { Title } from '../../components'
+import { Title } from '..'
 import LogoSrc from '../../assets/image/sudoku.png'
 
 const Header: FC = () => (
