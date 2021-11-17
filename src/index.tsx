@@ -10,7 +10,7 @@ import {
 	Grid,
 	NewGameButton,
 	Numbers,
-	Title,
+	Header,
 } from './components';
 import { configureStore, register } from './core';
 import { GlobalStyles, theme } from './styles';
@@ -23,7 +23,7 @@ ReactDOM.render(
 		<Provider store={store}>
 			<PersistGate loading={null} persistor={persistor}>
 				<Content>
-					<Title>Sudoku</Title>
+					<Header />
 					<Card>
 						<NewGameButton />
 						<Grid />
