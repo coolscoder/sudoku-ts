@@ -1,4 +1,4 @@
-import React, { Children, FC, useCallback, useEffect } from 'react';
+import React, { Children, FC, useCallback } from 'react';
 import useMousetrap from 'react-hook-mousetrap';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -28,9 +28,6 @@ const Grid: FC = () => {
 		})
 	);
 	const dispatch = useDispatch<Dispatch<AnyAction>>();
-
-	// UseCallback dispatches the createGrid
-	// const create = useCallback(() => dispatch(createGrid()), [dispatch]);
 
 	const fill = useCallback(
 		(n: NUMBERS) => {
@@ -81,10 +78,6 @@ const Grid: FC = () => {
 	useMousetrap('left', moveLeft);
 	useMousetrap('right', moveRight);
 	useMousetrap('up', moveUp);
-
-	// useEffect(() => {
-	// 	if (!state.solvedGrid) create();
-	// }, [create, state.solvedGrid]);
 
 	return (
 		<Container>
