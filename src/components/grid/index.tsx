@@ -30,7 +30,7 @@ const Grid: FC = () => {
 	const dispatch = useDispatch<Dispatch<AnyAction>>();
 
 	// UseCallback dispatches the createGrid
-	const create = useCallback(() => dispatch(createGrid()), [dispatch]);
+	// const create = useCallback(() => dispatch(createGrid()), [dispatch]);
 
 	const fill = useCallback(
 		(n: NUMBERS) => {
@@ -82,9 +82,9 @@ const Grid: FC = () => {
 	useMousetrap('right', moveRight);
 	useMousetrap('up', moveUp);
 
-	useEffect(() => {
-		if (!state.solvedGrid) create();
-	}, [create, state.solvedGrid]);
+	// useEffect(() => {
+	// 	if (!state.solvedGrid) create();
+	// }, [create, state.solvedGrid]);
 
 	return (
 		<Container>

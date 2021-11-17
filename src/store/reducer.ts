@@ -15,11 +15,12 @@ const initialState: IReducer = {};
 function reducer(state = initialState, action: AnyAction): IReducer {
 	switch (action.type) {
 		case types.CREATE_GRID: {
+			console.log("~~~~~>>>>>  ", action.level)
 			const solvedGrid = createFullGrid();
 			const gridCopy = copyGrid(solvedGrid);
 			const challengeGrid = removeNumbers(
 				gridCopy
-				// , 5
+				, 5
 				// set a number to increase difficulty
 			);
 			const workingGrid = copyGrid(challengeGrid);

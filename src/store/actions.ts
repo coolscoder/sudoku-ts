@@ -4,7 +4,7 @@ import { BLOCK_COORDS, NUMBERS } from '../typings';
 
 import * as types from './types';
 
-export const createGrid = (): Action => ({ type: types.CREATE_GRID });
+export const createGrid = (level: String): AnyAction => ({ type: types.CREATE_GRID, level });
 
 export const fillBlock = (value: NUMBERS, coords: BLOCK_COORDS): AnyAction => ({
 	coords,

@@ -1,8 +1,7 @@
-import React, { FC, useCallback, useState } from 'react';
+import React, { FC, useCallback, useEffect, useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { Action, Dispatch } from 'redux';
+import { AnyAction, Dispatch } from 'redux';
 import Select from 'react-select'
-import styled from 'styled-components';
 
 import { Button } from '..';
 import { createGrid } from '../../store';
@@ -22,12 +21,15 @@ const options = [
 
 const Controller: FC = () => {
 	const [level, setLevel] = useState<ILevel>(options[0])
-	const dispatch = useDispatch<Dispatch<Action>>();
+	const dispatch = useDispatch<Dispatch<AnyAction>>();
 
-	const createNewGrid = useCallback(() => {
-		if (window.confirm('Are you sure you want to start a new game?'))
-			dispatch(createGrid());
-	}, [dispatch]);
+	const createNewGrid = () => {
+		dispatch(createGrid(level.value));
+	}
+
+	useEffect(() => {
+		createNewGrid()
+	}, [level])
 
 	return (
 		<Container>
