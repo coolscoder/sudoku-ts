@@ -2,18 +2,6 @@
 
 ---
 
-## Table of contents
-
-- [Project](#Project)
-- [Technologies](#Technologies)
-- [Planning](#Planning)
-- [Images](#Images)
-- [Project Status](#Project-status)
-- [Learnings](#Learnings)
-- [Setup](#Setup)
-
----
-
 ## Project
 
 Building a functional and working sudoku to practice TypeScript in combination with React!
