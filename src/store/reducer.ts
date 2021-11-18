@@ -21,8 +21,8 @@ function reducer(state = initialState, action: AnyAction): IReducer {
 
 			switch(action.level) {
 				case 'easy': count = 1; break;
-				case 'normal': count = 5; break;
-				case 'hard': count = 10; break;
+				case 'normal': count = 3; break;
+				case 'hard': count = 5; break;
 				default: break;
 			}
 
